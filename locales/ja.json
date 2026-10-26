@@ -179,7 +179,7 @@
     "copy": "コピー"
   },
   "TemurinReleases": {
-    "title": "Temurin® JDKをダウンロード",
+    "title": "Temurin® JDKを\u200Bダウンロード",
     "latest-releases": "最新リリース",
     "description": "バージョン、パッケージタイプ、JDK/JREを選択してバイナリをダウンロードしてください。"
   },

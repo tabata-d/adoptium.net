@@ -63,7 +63,7 @@ exports[`Marketplace page > renders correctly 1`] = `
             </div>
           </div>
           <div
-            class="self-stretch text-center text-white font-semibold text-[56px] lg:text-[80px] leading-[114.286%] md:leading-[120%]"
+            class="self-stretch text-center text-white font-semibold [&:lang(ja)]:[word-break:keep-all] [&:lang(ja)]:[overflow-wrap:anywhere] text-[56px] lg:text-[80px] leading-[114.286%] md:leading-[120%]"
           >
             Text
           </div>

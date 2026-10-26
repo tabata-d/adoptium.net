@@ -10,6 +10,9 @@ interface PageHeaderProps {
   compact?: boolean;
 }
 
+// Keep Japanese words intact - break only at spaces and U+200B (zero-width space)
+const jaLineBreak = "[&:lang(ja)]:[word-break:keep-all] [&:lang(ja)]:[overflow-wrap:anywhere]";
+
 export default function PageHeader({
   title,
   subtitle,
@@ -42,11 +45,11 @@ export default function PageHeader({
             {/* if title is a string else React.ReactNode */}
             {typeof title === "string" ? (
               <div
-                className={`self-stretch text-center text-white font-semibold ${compact ? "text-2xl md:text-4xl leading-tight" : "text-[56px] lg:text-[80px] leading-[114.286%] md:leading-[120%]"}`}
+                className={`self-stretch text-center text-white font-semibold ${jaLineBreak} ${compact ? "text-2xl md:text-4xl leading-tight" : "text-[56px] lg:text-[80px] leading-[114.286%] md:leading-[120%]"}`}
                 dangerouslySetInnerHTML={{ __html: title }}
               />
             ) : (
-              <h1 className={`self-stretch text-center text-white font-semibold ${compact ? "text-2xl md:text-4xl pb-2" : "text-2xl md:text-5xl pb-4"}`}>
+              <h1 className={`self-stretch text-center text-white font-semibold ${jaLineBreak} ${compact ? "text-2xl md:text-4xl pb-2" : "text-2xl md:text-5xl pb-4"}`}>
                 {title}
               </h1>
             )}

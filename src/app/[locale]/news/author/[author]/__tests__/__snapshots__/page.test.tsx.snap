@@ -69,7 +69,7 @@ exports[`AuthorNewsPage > renders header and news when posts exist 1`] = `
               </div>
             </div>
             <div
-              class="self-stretch text-center text-white font-semibold text-2xl md:text-4xl leading-tight"
+              class="self-stretch text-center text-white font-semibold [&:lang(ja)]:[word-break:keep-all] [&:lang(ja)]:[overflow-wrap:anywhere] text-2xl md:text-4xl leading-tight"
             >
               Jane Doe
             </div>

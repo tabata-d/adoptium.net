@@ -64,7 +64,7 @@ exports[`NewsPage (paginated) > renders header and passes correct props to NewsP
               </div>
             </div>
             <div
-              class="self-stretch text-center text-white font-semibold text-2xl md:text-4xl leading-tight"
+              class="self-stretch text-center text-white font-semibold [&:lang(ja)]:[word-break:keep-all] [&:lang(ja)]:[overflow-wrap:anywhere] text-2xl md:text-4xl leading-tight"
             >
               News & Updates
             </div>
